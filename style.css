@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'American Captain';
+    src: url('/assets/American Captain.ttf') format('truetype');
+  }
+
 :root {
     --pink: #F81C7B;
     --dark-pink: #341928;
@@ -60,9 +65,12 @@ nav {
 
 #hamburgers {
     width: fit-content;
-    position: absolute;
+    position: fixed;
     z-index: 2;
-    right: 15px;
+    right: .6em;
+    top: 1em;
+    cursor: pointer;
+    z-index: 3
 }
 
 #hamburger-1, #hamburger-2, #hamburger-3 {
@@ -80,19 +88,23 @@ nav {
     border-radius: 0px 0px 2px 2px;
 }
 
-#hamburger-active {
+.menu-container {
+    display: flex;
+    flex-direction: row-reverse;
     position: fixed;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 60%);
-    backdrop-filter: blur(5px);
-    right: 0px;
+    right: -100%;
     top: 0px;
     height: 100vh;
-    width: 100vw;
-    
+    width: 100vw; 
+    transition: right .4s ease-in-out;
 }
 
-#navbar-options-container {
+.menu-container-active {
+    right: 0%
+}
+
+#menu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,14 +118,29 @@ nav {
     padding: 1em;
 }
 
-#navbar-options {
+#menu-options {
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 2.5em;
-    padding: 0.5em;
+    padding: 2em;
     text-decoration: underline;
+}
 
+#blurred-layer {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 60%);
+    backdrop-filter: blur(5px);
+}
+
+#blurred-layer > p {
+    font-size: 0.5em;
+    margin-bottom: 0.5em;
+    width: 100%;
+    color: #AEADB2;
+    text-align: center;
 }
 
 #welcome-page {
