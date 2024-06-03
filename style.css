@@ -48,42 +48,30 @@ html {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Center Icon & Hamburger */
     width: 100%;
-    padding: 0.4em;
-    background-color: var(--darker-blue);
+    padding: 0.4em 0.6em; /* Padding for Icon & Hamburger : Top Bottom | Left Right */
     position: sticky;
     top: 0;
     z-index: 20;
+    background-color: var(--darker-blue);
 }
 
-.logo-nav {
-
-}
-
-#hamburgers {
-    width: fit-content;
-    position: fixed;
-    z-index: 2;
-    right: .6em;
-    top: 1em;
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* add space between bars */
+    border-radius: 2px; /* "Curved" top & bottom bars */
+    overflow: hidden; /* applying "Curved" effect */
+    width: 30px;
+    height: 24px;
     cursor: pointer;
-    z-index: 3
 }
 
-#hamburger-1, #hamburger-2, #hamburger-3 {
+.hamburger-bar {
     width: 30px;
     height: 4px;
-    margin-top: 4px;
     background-color: var(--hamburger-color);
-}
-
-#hamburger-1 {
-    border-radius: 2px 2px 0px 0px;
-}
-
-#hamburger-3 {
-    border-radius: 0px 0px 2px 2px;
 }
 
 .menu-container {
