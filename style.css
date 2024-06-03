@@ -46,21 +46,19 @@ html {
 
 
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 1.5em;
-    /* height: fit-content; */
+    padding: 0.4em;
     background-color: var(--darker-blue);
+    position: sticky;
+    top: 0;
+    z-index: 20;
 }
 
-.inner-nav {
-    /* width: 100%; */
-    top: 0px;
-    left: 0px;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    z-index: 2;
-    padding: 0 0 0 0;
+.logo-nav {
+
 }
 
 #hamburgers {
