@@ -10,13 +10,11 @@
     --pink-gradient-color-1: #F9655F;
     --pink-gradient-color-2: #F28061;
 
-
     --blue: #43BFE8;
     --dark-blue: #2E2D43;
     --darker-blue: #222131;
     --blue-gradient-color-1: #0b1119;
     --blue-gradient-color-2: #9B63C3;
-
 
     --border-color: rgba(255, 255, 255, 10%);
     --hamburger-color: #669CDC;
@@ -161,40 +159,135 @@ html {
     text-align: center;
 }
 
-#welcome-page {
-    width: 100%;
-    border-top: none;
-    position: relative;
-    background-color: var(--darker-pink);
-    overflow-x: hidden;
-    height: fit-content;
 
-}
-
-#welcome-page > h1 {
-    margin-top: 10px;
-    font-size: 2em;
-    width: inherit;
-    text-align: center;
-    background-image: linear-gradient(to right, var(--pink), var(--pink-gradient-color-1), var(--pink-gradient-color-2));
-    -webkit-background-clip: text; /* For Safari */
-    background-clip: text;
-    color: transparent;
-}
-
-#true-img{
-    right: 0%;
-    top: 14%;
-    position: absolute;
-}
-
-#mock-img {
-    border: 1px solid purple;
-    visibility: hidden;
+@media (max-width: 768px) {
+    /*! HOME SECTION STYLE */
+    #welcome-page {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top: none;
+        background-color: var(--darker-pink);
+        overflow-x: hidden;
+        padding: 20px 20px 40px 20px;
+        position: relative;
+    }
+    #welcome-page > h1 {
+        margin-top: 10px;
+        font-size: 2em;
+        width: inherit;
+        text-align: center;
+        background-image: linear-gradient(to right, var(--pink), var(--pink-gradient-color-1), var(--pink-gradient-color-2));
+        -webkit-background-clip: text; /* For Safari */
+        background-clip: text;
+        text-shadow: -3px 0px 16px rgba(248, 28, 123, 1);
+        /* text-shadow: 0 2px 0 var(--pink), 0 2px 0 var(--pink-gradient-color-1), 0 0 5px var(--pink-gradient-color-2); */
+        color: transparent;
+    }
+    #true-img{
+        top: 5;
+        bottom: 5;
+        left: 1;
+        position: absolute;
+        background: transparent;
+    }
+    #mock-img {
+        border: 1px solid purple;
+        visibility: hidden;
+    }
+    
+    /*! ABOUT SECTION STYLE */
+    #about-page {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: none;
+        position: relative;
+        overflow-x: hidden;
+        height: fit-content;
+    }
+    .about-title {
+        width: 100%;
+        background-color: var(--darker-blue);
+        padding: 20px 20px 60px 20px;
+    }
+    .about-title > h1 { 
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 2em;
+        width: inherit;
+        text-align: start;
+        background-image: linear-gradient(to bottom, var(--blue), var(--blue-gradient-color-2));
+        -webkit-background-clip: text; /* For Safari */
+        background-clip: text;
+        color: transparent;
+        text-shadow: -4px 0 16px rgba(67, 191, 232, 0.5);
+        letter-spacing: 1px;
+        
+    }
+    .about-title > p{
+        text-align: start;
+        color: var(--blue-gradient-color-2);
+        font-size: 18px;
+    }
+    .about-content {
+        width: 100%;
+        padding: 20px 20px 80px 20px;
+        background-color: var(--darker-blue);
+    }
+    .image-wrapper-about{
+        width: auto;
+        background: tomato;
+        overflow: hidden;
+        box-shadow: inset 0 0 10px var(--darker-blue); /*ini ceritanya mau 
+        ngasih shadow didalem konten yang ada image tapi lupa gimana*/
+    }
+    
+    /* COMPETITIONS STYLE */
+    #comp-page {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        border-top: none;
+        background-color: var(--darker-pink);
+        overflow-x: hidden;
+        padding: 30px 20px 20px 20px;
+        position: relative;
+    }
+    
+    .comp-m-title {
+        padding-top: 20px;
+        padding-bottom: 25px;
+    }
+    .comp-title {
+        font-size: 1.5em;
+    }
+    .comp-title > h1 {
+        background-image: linear-gradient(to right, var(--pink), var(--pink-gradient-color-1), var(--pink-gradient-color-2));
+        -webkit-background-clip: text; /* For Safari */
+        background-clip: text;
+        color: transparent;
+        text-shadow: -4px 0px 16px rgba(248, 28, 123, 0.5);
+        /* text-shadow: -3px 0px 10px var(--pink) */
+    }
+    .comp-title > h1 > span {
+        background-image: linear-gradient(to bottom, var(--blue), var(--blue-gradient-color-2));
+        -webkit-background-clip: text; /* For Safari */
+        background-clip: text;
+        color: transparent;
+        letter-spacing: 1px;
+        text-shadow: -4px 0px 8px var(--blue);
+        margin-left: 2px;
+    }
 }
 
 .invisible {
     visibility: hidden;
-   
-
 }
+
