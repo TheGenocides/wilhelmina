@@ -1,6 +1,9 @@
-const hamburgers = document.getElementById("hamburgers")
+const openMenu = document.getElementById("open-menu");
+const closeMenu = document.getElementById("close-menu");
+const menuContainer = document.getElementById("menu-container")
 
-hamburgers.addEventListener("click", (ev) => {
-    const menuContainer = document.getElementById("menu-container")
-    menuContainer.classList.toggle("menu-container-active")
-})
+Array(openMenu, closeMenu).forEach(button => {
+    button.addEventListener("click", () => {
+        menuContainer.classList.toggle("menu-container-active");
+    });
+});
