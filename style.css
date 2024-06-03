@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'American Captain';
     src: url('/assets/American Captain.ttf') format('truetype');
-  }
+}
 
 :root {
     --pink: #F81C7B;
@@ -45,89 +45,106 @@ html {
 }
 
 
-nav {
-    width: 100%;
-    padding: 0.4em;
-    height: fit-content;
-}
-
-#inner-nav {
-    width: 100%;
-    top: 0px;
-    left: 0px;
+.navbar {
     display: flex;
-    align-items: center;
-    position: fixed;
-    z-index: 2;
-    padding: inherit;
+    justify-content: space-between;
+    align-items: center; /* Center Icon & Hamburger */
+    width: 100%;
+    padding: 0.4em 0.6em; /* Padding for Icon & Hamburger : Top Bottom | Left Right */
+    position: sticky;
+    top: 0;
+    z-index: 5;
     background-color: var(--darker-blue);
 }
 
-#hamburgers {
-    width: fit-content;
-    position: fixed;
-    z-index: 2;
-    right: .6em;
-    top: 1em;
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* add space between bars */
+    border-radius: 2px; /* "Curved" top & bottom bars */
+    overflow: hidden; /* applying "Curved" effect */
+    width: 30px;
+    height: 24px; /* Spacing between bars */
     cursor: pointer;
-    z-index: 3
 }
 
-#hamburger-1, #hamburger-2, #hamburger-3 {
+.hamburger-bar {
     width: 30px;
     height: 4px;
-    margin-top: 4px;
     background-color: var(--hamburger-color);
-}
-
-#hamburger-1 {
-    border-radius: 2px 2px 0px 0px;
-}
-
-#hamburger-3 {
-    border-radius: 0px 0px 2px 2px;
 }
 
 .menu-container {
     display: flex;
-    flex-direction: row-reverse;
-    position: fixed;
-    z-index: 2;
-    right: -100%;
+    width: 100dvw;
+    height: 100dvh; 
     top: 0px;
-    height: 100vh;
-    width: 100vw; 
-    transition: right .4s ease-in-out;
+    position: fixed;
+    z-index: 10;
+    transition: right 0.4s ease-in-out;
+    right: -100vw; /* Hide menu */
 }
 
 .menu-container-active {
-    right: 0%
+    right: 0;
 }
 
-#menu {
+.menu {
+    position: relative; /* for "close-menu-container" */
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: none;
-    margin-left: auto;
-    border-right: none;
-    border-bottom: none;
+    border-left: 2px solid var(--border-color); /* Menu left border */
     background-color: var(--darker-blue);
-    width: 7em;
-    height: 100vh;
-    padding: 1em;
+    padding: 0 1em;
 }
 
-#menu-options {
+.close-menu-container {
+    position: absolute; /* for top & right absolute positioning */
+    width: 1.4em;
+    height: 1.4em;
+    top: 18px;
+    right: 15px;
+    cursor: pointer;
+}
+
+/* STOLEN FROM: https://stackoverflow.com/questions/18611195/x-close-button-only-using-css */
+.close-menu:before, .close-menu:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 4px;
+    border-radius: 2px;
+    background-color: var(--pink);
+}
+
+.close-menu:before {
+    transform: rotate(45deg);
+}
+
+.close-menu:after {
+    transform: rotate(-45deg);
+}
+
+.menu-options {
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 100%;
     gap: 2.5em;
-    padding: 2em;
-    text-decoration: underline;
+    margin-top: 5em; /* space between "menu-options" and top */
 }
 
-#blurred-layer {
+.menu-options > div > a {
+    color: var(--blue-gradient-color-2); /* WHAT COLOR ? */
+    /* AMPAR AMPAR SIGMA
+    SIGMAKU BLUM GYATT
+    GYATT SKIBIDI
+    DIHURUNG OHIO RIZZ */
+}
+
+.blurred-layer {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
@@ -135,9 +152,10 @@ nav {
     backdrop-filter: blur(5px);
 }
 
-#blurred-layer > p {
+.blurred-layer > p {
     font-size: 0.5em;
     margin-bottom: 0.5em;
+    padding: 0 1em;
     width: 100%;
     color: #AEADB2;
     text-align: center;
