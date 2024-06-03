@@ -171,7 +171,7 @@ html {
         align-items: center;
         border-top: none;
         background-color: var(--darker-pink);
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         padding: 20px 20px 40px 20px;
         position: relative;
     }
@@ -207,13 +207,15 @@ html {
         justify-content: center;
         border-top: none;
         position: relative;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         height: fit-content;
+        background: rgb(45,21,34);
+        background: linear-gradient(0deg, rgba(45,21,34,1) 0%, rgba(34,33,49,1) 10%, rgba(34,33,49,1) 90%, rgba(45,21,34,1) 100%);
     }
     .about-title {
         width: 100%;
-        background-color: var(--darker-blue);
-        padding: 20px 20px 60px 20px;
+        /* background-color: var(--darker-blue); */
+        padding: 50px 20px 60px 20px;
     }
     .about-title > h1 { 
         margin-top: 10px;
@@ -236,8 +238,8 @@ html {
     }
     .about-content {
         width: 100%;
-        padding: 20px 20px 80px 20px;
-        background-color: var(--darker-blue);
+        padding: 20px 20px 100px 20px;
+        /* background-color: var(--darker-blue); */
     }
     .image-wrapper-about{
         width: auto;
@@ -250,13 +252,13 @@ html {
     /* COMPETITIONS STYLE */
     #comp-page {
         width: 100%;
-        height: fit-content;
+        height: 500px;
         display: flex;
         flex-direction: column;
         justify-content: start;
         border-top: none;
         background-color: var(--darker-pink);
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         padding: 30px 20px 20px 20px;
         position: relative;
     }
@@ -267,8 +269,9 @@ html {
     }
     .comp-title {
         font-size: 1.5em;
+        position: relative;
     }
-    .comp-title > h1 {
+    .comp-title > .orange-text > h1 {
         background-image: linear-gradient(to right, var(--pink), var(--pink-gradient-color-1), var(--pink-gradient-color-2));
         -webkit-background-clip: text; /* For Safari */
         background-clip: text;
@@ -276,14 +279,21 @@ html {
         text-shadow: -4px 0px 16px rgba(248, 28, 123, 0.5);
         /* text-shadow: -3px 0px 10px var(--pink) */
     }
-    .comp-title > h1 > span {
+    .comp-title > .blue-text > h1 {
         background-image: linear-gradient(to bottom, var(--blue), var(--blue-gradient-color-2));
         -webkit-background-clip: text; /* For Safari */
         background-clip: text;
         color: transparent;
         letter-spacing: 1px;
-        text-shadow: -4px 0px 8px var(--blue);
-        margin-left: 2px;
+        /* text-shadow: -4px 0px 8px var(--blue); */
+        text-shadow: -4px 0px 8px rgba(28, 248, 237, 0.5);
+        /* margin-left: 2px; */
+        text-align: end;
+    }
+    .blue-text {
+        position: absolute;
+        width: 100%;
+        top: 130px;
     }
 }
 
