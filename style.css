@@ -171,7 +171,7 @@ html {
         align-items: center;
         border-top: none;
         background-color: var(--darker-pink);
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         padding: 20px 20px 40px 20px;
         position: relative;
     }
@@ -207,13 +207,15 @@ html {
         justify-content: center;
         border-top: none;
         position: relative;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         height: fit-content;
+        background: rgb(45,21,34);
+        background: linear-gradient(0deg, rgba(45,21,34,1) 0%, rgba(34,33,49,1) 10%, rgba(34,33,49,1) 90%, rgba(45,21,34,1) 100%);
     }
     .about-title {
         width: 100%;
-        background-color: var(--darker-blue);
-        padding: 20px 20px 60px 20px;
+        /* background-color: var(--darker-blue); */
+        padding: 50px 20px 60px 20px;
     }
     .about-title > h1 { 
         margin-top: 10px;
@@ -236,8 +238,8 @@ html {
     }
     .about-content {
         width: 100%;
-        padding: 20px 20px 80px 20px;
-        background-color: var(--darker-blue);
+        padding: 20px 20px 100px 20px;
+        /* background-color: var(--darker-blue); */
     }
     .image-wrapper-about{
         width: auto;
@@ -256,7 +258,7 @@ html {
         justify-content: start;
         border-top: none;
         background-color: var(--darker-pink);
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         padding: 30px 20px 20px 20px;
         position: relative;
     }
@@ -267,8 +269,10 @@ html {
     }
     .comp-title {
         font-size: 1.5em;
+        position: relative;
+        margin-bottom: 155px; /* Space between ".orange-text" and ".com-list" for some reason */
     }
-    .comp-title > h1 {
+    .comp-title > .orange-text > h1 {
         background-image: linear-gradient(to right, var(--pink), var(--pink-gradient-color-1), var(--pink-gradient-color-2));
         -webkit-background-clip: text; /* For Safari */
         background-clip: text;
@@ -276,14 +280,76 @@ html {
         text-shadow: -4px 0px 16px rgba(248, 28, 123, 0.5);
         /* text-shadow: -3px 0px 10px var(--pink) */
     }
-    .comp-title > h1 > span {
+    .comp-title > .blue-text > h1 {
         background-image: linear-gradient(to bottom, var(--blue), var(--blue-gradient-color-2));
         -webkit-background-clip: text; /* For Safari */
         background-clip: text;
         color: transparent;
         letter-spacing: 1px;
-        text-shadow: -4px 0px 8px var(--blue);
-        margin-left: 2px;
+        /* text-shadow: -4px 0px 8px var(--blue); */
+        text-shadow: -4px 0px 8px rgba(28, 248, 237, 0.5);
+        /* margin-left: 2px; */
+        text-align: end;
+    }
+    .blue-text {
+        position: absolute;
+        width: 100%;
+        top: 130px;
+    }
+
+    .comp-list {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        /* border: 1px solid red; */
+    }
+    .comp-list-box {
+        display: flex;
+        gap: 25px;
+        border: 3px solid var(--pink);
+        padding: 0.4em;
+        border-radius: 5px;
+        height: 180px;
+    }
+    .comp-list-box > .box-img {
+        border: 3px solid var(--pink);
+        width: 160px;
+    }
+    .box-img > img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .comp-list-box > .box-detail {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        padding: 0.2em 0;
+        /* border: 3px solid var(--pink); */ /* ENABLE FOR DEBUGGING PURPOSE */
+    }
+    .box-detail > .detail-header {
+        font-size: 1.6em;
+        /* NOTICE! ADD GRADIENT */
+    }
+    .box-detail > .detail-button {
+        padding: 2.4em 7em;
+        color: var(--pink);
+        border: 3px solid var(--pink);
+        border-radius: 5px;
+        background-color: transparent;
+        font-weight: 600;
+        /* NOTICE! ADD GRADIENT */
+        /* NOTICE! ADD FONT SIZE */
+    }
+    .box-detail > .detail-button:hover {
+        border: none;
+        background: rgb(248,28,123);
+        background: linear-gradient(135deg, rgba(248,28,123,1) 0%, rgba(249,101,95,1) 55%);
+        color: white;
+        transition: 0.4s ease;
     }
 }
 
