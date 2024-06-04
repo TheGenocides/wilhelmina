@@ -169,9 +169,14 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 24rem;
-    padding: 2em 0;
+    height: 25rem;
+    padding: 2em 2em;
     background-color: var(--darker-pink);
+    overflow: hidden;
+}
+
+.welcome-page > .header {
+    z-index: 2;
 }
 
 .welcome-page > .header > h1 {
@@ -190,11 +195,52 @@ html {
     top: 4em;
     background: transparent;
     width: 380px;
+    z-index: 2;
 }
 
 .welcome-page > .img > img {
     width: 100%;
     height: 100%;
+}
+
+.stripe-pattern {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 18px 18px;
+    background-image: linear-gradient(
+      -45deg,
+      var(--darker-pink) 25%,
+      var(--dark-pink) 25%,
+      var(--dark-pink) 50%,
+      var(--darker-pink) 50%,
+      var(--darker-pink) 75%,
+      var(--dark-pink) 75%,
+      var(--dark-pink) 100%
+    );
+    box-shadow: inset 0rem 0.5rem 2rem 0.25rem rgb(0 0 0 / 40%);
+    z-index: 1;
+    animation: scroll-stripe 180s linear infinite;
+}
+
+@keyframes scroll-stripe {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+}
+
+.welcome-page > .transition {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(46,45,67,1) 50%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    z-index: 3;
 }
 
 
