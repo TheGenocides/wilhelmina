@@ -7,3 +7,10 @@ Array(openMenu, closeMenu).forEach(button => {
         menuContainer.classList.toggle("menu-container-active");
     });
 });
+
+const navLink = document.querySelectorAll(".menu-options > div > a");
+navLink.forEach((link) => {
+    link.addEventListener("click", () => {
+        menuContainer.classList.toggle("menu-container-active");
+    });
+});
