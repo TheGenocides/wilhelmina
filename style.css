@@ -208,7 +208,6 @@ html {
         justify-content: center;
         border: none;
         outline: none;
-        position: relative;
         height: fit-content;
         background: rgb(45,21,34);
         background: linear-gradient(0deg, rgba(45,21,34,1) 0%, rgba(34,33,49,1) 10%, rgba(34,33,49,1) 90%, rgba(45,21,34,1) 100%);
@@ -237,16 +236,26 @@ html {
     }
     .about-content {
         width: 100%;
-        padding: 20px 20px 100px 20px;
         outline: 0;
-        border: none;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 105px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        border:1px solid #43BFE8;
     }
     .image-wrapper-about{
-        width: auto;
-        background: tomato;
-        overflow: hidden;
-        box-shadow: inset 2px 3px 10px var(--blue); /*ini ceritanya mau 
-        ngasih shadow didalem konten yang ada image tapi lupa gimana*/
+        width: 100%;
+        overflow: hidden; 
+        border:1px solid #43BFE8;
+        /*ini ceritanya mau 
+        ngasih shadow didalem konten yang 
+        ada image tapi lupa gimana*/
+    }
+    .image-wrapper-about > img {
+        width: 300px;
+        object-fit: cover;
     }
     
     /* COMPETITIONS STYLE */
@@ -334,10 +343,10 @@ html {
         background-clip: text;
         color: transparent;
         letter-spacing: 1px;
+        margin-bottom: 6px;
         /* NOTICE! ADD GRADIENT */
     }
     .box-detail > .detail-button {
-        margin-top: 6px;
         padding: 2em 4em;
         color: var(--pink);
         border: 3px solid var(--pink);
@@ -347,12 +356,12 @@ html {
         /* NOTICE! ADD GRADIENT */
         /* NOTICE! ADD FONT SIZE */
     }
-    .box-detail > .detail-button:hover {
+    .box-detail > .detail-button:focus {
         border: none;
         background: rgb(248,28,123);
         background: linear-gradient(135deg, rgba(248,28,123,1) 0%, rgba(249,101,95,1) 55%);
         color: white;
-        transition: 0.4s ease;
+        transform: scale(1);
     }
     
     /* ! FOOTER STYLING COMPONENTS */
@@ -364,7 +373,7 @@ html {
         justify-content: start;
         border-top: 1px solid rgb(189, 185, 185);
         background-color: var(--darker-blue);
-        padding: 40px;
+        padding: 40px 15px;
         position: relative;
         gap: 30px;
     }
@@ -398,7 +407,7 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1em;
+        font-size: 0.7em;
         text-align: start;
         color: var(--blue);
         padding-top: 80px;
