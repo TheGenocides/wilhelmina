@@ -159,6 +159,44 @@ html {
     text-align: center;
 }
 
+/* --- WELCOME PAGE --- */
+/* .welcome-page, .welcome-page * {
+    border: 1px solid red;
+} */
+
+.welcome-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 24rem;
+    padding: 2em 0;
+    background-color: var(--darker-pink);
+}
+
+.welcome-page > .header > h1 {
+    font-size: 3em;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--pink), var(--pink-gradient-color-1), var(--pink-gradient-color-2));
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text;
+    text-shadow: -3px 0px 16px rgba(248, 28, 123, 1);
+    /* text-shadow: 0 2px 0 var(--pink), 0 2px 0 var(--pink-gradient-color-1), 0 0 5px var(--pink-gradient-color-2); */
+    color: transparent;
+}
+
+.welcome-page > .img {
+    position: absolute;
+    top: 4em;
+    background: transparent;
+    width: 380px;
+}
+
+.welcome-page > .img > img {
+    width: 100%;
+    height: 100%;
+}
+
 
 @media (max-width: 768px) {
     /*! HOME SECTION STYLE */
