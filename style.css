@@ -522,7 +522,7 @@ html, body {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
-    padding-left: 3em;
+    padding: 0 3em;
 }
 .foot-img {
     width: 400px;
@@ -550,7 +550,7 @@ html, body {
     align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width < 480px) {
     .footer-head {
         width: inherit;
         height: fit-content;
@@ -559,11 +559,9 @@ html, body {
         padding: 20px 30px;
     }
     .footer-center {
-        width: inherit;
-        height: fit-content;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
         gap: 10px;
+        padding: 0 1em;
+        border: 1px solid;
         padding: 0 30px;
     }
     .foot-img {
