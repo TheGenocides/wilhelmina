@@ -180,6 +180,20 @@ html, body {
     margin-top: 3em; /* Distance between navbar and welcome page (navbar use position fixed) */
 }
 
+@media (max-width: 768px) {
+    .welcome-page {
+        height: 27em;
+        padding: 1em 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-page {
+        padding: 1em 1em;
+        height: 25em;
+    }
+}
+
 .welcome-opening {
     margin-top: 1.8em;
     position: relative;
@@ -198,7 +212,6 @@ html, body {
     -webkit-background-clip: text; /* For Safari */
     background-clip: text;
     text-shadow: -3px 0px 16px rgba(248, 28, 123, 1);
-    /* text-shadow: 0 2px 0 var(--pink), 0 2px 0 var(--pink-gradient-color-1), 0 0 5px var(--pink-gradient-color-2); */
     color: transparent;
 }
 
@@ -270,17 +283,38 @@ html, body {
     width: 100%;
     height: 18rem;
     display: flex;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
     background-color: var(--darker-blue);
+    padding: 6em;
+    gap: 3em;
+}
+
+@media (max-width: 480px) {
+    .about-page {
+        flex-wrap: wrap;
+        padding: 1.5em;
+        gap: 1.2em;
+    }
+}
+@media (max-width: 768px) {
+    .about-page {
+        flex-wrap: wrap;
+        padding: 1.5em;
+        gap: 1.2em;
+    }
 }
 
 .about-title {
-    margin-bottom: 1.5em;
     z-index: 6;
+}
+.about-title p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
 .about-title > h1 { 
-    padding: 0 21px;
     font-size: clamp(1.8rem, 1.4716rem + 2.3881vw, 3rem);
     background-image: linear-gradient(to bottom, var(--blue), var(--blue-gradient-color-2));
     -webkit-background-clip: text; /* For Safari */
@@ -291,31 +325,22 @@ html, body {
 }
 
 .about-title > p {
-    padding: 0 3em 0 1em;
+    padding: 0.3em;
     margin-top: 0.4em;
     color: var(--blue-gradient-color-2);
     font-size: clamp(0.7rem, 0.14rem + 3.2vw, 1.1rem);
-}
-
-@media (max-width: 768px) {
-    .about-title > p {
-        padding: 0.1em;
-    }
 }
 
 .about-content {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     /* border:1px solid #43BFE8; */
 }
 .img-wrapper-about{
-    /* overflow: hidden;  */
+    overflow: hidden;
     width: 16em;
-    /* border:1px solid red; */
-    /*ini ceritanya mau 
-    ngasih shadow didalem konten yang 
-    ada image tapi lupa gimana*/
 }
 .img-wrapper-about > img {
     object-fit: cover;
@@ -402,21 +427,22 @@ html, body {
     position: absolute;
     right: 5%;
     bottom: 0;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     /* transform: translateY(-1.5em);
     transform: translateX(-1.5em); */
+    transform: translateY(-25px);
     display: flex;
     align-items: end;
     z-index: 10;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .comp-title {
         font-size: 1.3em;
     }
     .blue-text {
         /* padding-bottom: 60px; */
-        transform: translateY(-40px);
+        transform: translateY(-70px);
     }
     .comp-m-title {
         z-index: 4;
@@ -445,12 +471,15 @@ html, body {
 
 @media (max-width: 768px) {
     .comp-list {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
     .comp-list-box {
-        padding: 0.5em 0.5em;
+        padding: 0.5em 0.4em;
         /* padding: 0.1em; */
+    }
+    .box-detail > .detail-button {
+        padding: 1em 1em;
     }
 }
 
@@ -501,9 +530,22 @@ html, body {
     transition: all 0.2s ease-in;
 }
 
+@media (max-width: 480px) {
+    .box-detail > .detail-button:focus-within {
+        background: rgb(248,28,123);
+        background: linear-gradient(135deg, rgba(248,28,123,1) 0%, rgba(249,101,95,1) 55%);
+        color: white;
+        transform: scale(0.9);
+        border: none;
+        transition: 0.1s ease-in;
+    }
+    
+}
+
 /*! FOOTER PAGE STYLING */
 .footer-page {
     width: 100%;
+    height: fit-content;
     background-color: var(--darker-blue);
     border-top: 2px solid gray;
 }
@@ -511,11 +553,16 @@ html, body {
     width: inherit;
     display: flex;
     align-items: center;
-    padding: 20px 70px;
+    padding: 20px 90px;
+    color: var(--blue);
+    font-family: 'Poppins', sans-serif;
+}
+.footer-head h1 {
+    font-size: 1.2em;
 }
 .footer-center {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    flex-direction: row;
     gap: 20px;
     padding: 0 3em;
 }
@@ -531,8 +578,24 @@ html, body {
     height: 100%;
 }
 .foot-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     width: inherit;
-    font-size: 1em;
+    text-align: start;
+    color: #929090;
+    white-space: wrap;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+.foot-desc h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: var(--blue);
+    font-size: 0.7em;
+}
+.foot-desc p {
+    font-size: 0.6em;
 }
 .footer-bottom {
     display: flex;
@@ -553,28 +616,31 @@ html, body {
         margin: 0 0.5em;
     }
     .comp-list-box > .box-img {
-        width: 100px;
+        width: 150px;
     }
     .box-detail > .detail-button {
-        padding: 0.5em 1.5em;
+        padding: 0.6em 1.2em;
     }
     .box-detail > .detail-header {
         font-size: 1em;
     }
 
-    .footer-head {
+    .footer-head{
         width: inherit;
         height: fit-content;
         display: flex;
         align-items: center;
-        padding: 20px 30px;
+        padding: 20px 40px;
+    }
+    .footer-head h1 {
+        font-size: 0.6em;
     }
     .footer-center {
         gap: 10px;
         padding: 0 1em;
     }
     .foot-img {
-        width: 160px;
+        width: 150px;
         height: 120px;
         overflow: hidden;
         background-color: #2E2D43;
@@ -586,11 +652,19 @@ html, body {
     }
     .foot-desc {
         width: inherit;
-        font-size: 0.6em;
-        text-align: justify;
+        font-size: 0.4em;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+    }
+    .foot-desc h3{
+        font-size: 1em;
+        color: var(--blue);
+    }
+    .foot-desc p{
+        font-size: 0.9em;
     }
     .footer-bottom > p {
-        font-size: 0.6em;
+        font-size: 0.5em;
     }
 }
 
