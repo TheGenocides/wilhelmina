@@ -228,7 +228,7 @@ html, body {
 @media (max-width: 480px) {
     .welcome-opening > .img {
         position: absolute;
-        top: 5.5em;
+        top: 4.4em;
         right: 7%;
     }
 }
@@ -450,7 +450,7 @@ html, body {
     }
     .blue-text {
         /* padding-bottom: 60px; */
-        transform: translateY(-120px);
+        transform: translateY(-20px);
     }
     .comp-m-title {
         z-index: 4;
