@@ -206,7 +206,7 @@ html, body {
 
 .welcome-opening > .header > h1 {
     font-size: 3em;
-    font-size: clamp(2rem, 1.4716rem + 2.3881vw, 3rem);
+    font-size: clamp(2.5rem, 1.4716rem + 2.3881vw, 3rem);
     text-align: center;
     background-image: linear-gradient(to right, var(--pink), var(--pink-gradient-color-1), var(--pink-gradient-color-2));
     -webkit-background-clip: text; /* For Safari */
@@ -216,13 +216,21 @@ html, body {
 }
 
 .welcome-opening > .img {
-    /* position: absolute;
-    top: 4.5em; */
-    /* transform: translateY(-40px); */
+    position: absolute;
+    top: 3em;
+    right: 5em;
     background: transparent;
     width: clamp(280px, 70vw, 380px);
     z-index: 2;
     margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+    .welcome-opening > .img {
+        position: absolute;
+        top: 4.8em;
+        right: 7%;
+    }
 }
 
 .welcome-opening > .img > img {
@@ -442,7 +450,7 @@ html, body {
     }
     .blue-text {
         /* padding-bottom: 60px; */
-        transform: translateY(-70px);
+        transform: translateY(-90px);
     }
     .comp-m-title {
         z-index: 4;
