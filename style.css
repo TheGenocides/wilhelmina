@@ -565,14 +565,12 @@ html, body {
         grid-template-columns: repeat(2,1fr);
         gap: 10px;
         padding: 0 30px;
-        border: 1px solid;
     }
     .foot-img {
         width: 200px;
         height: 160px;
         overflow: hidden;
         background-color: #2E2D43;
-        border: 1px solid;
     }
     .foot-img > img {
         object-fit: cover;
@@ -583,7 +581,6 @@ html, body {
         width: inherit;
         font-size: 0.6em;
         text-align: justify;
-        border: 1px solid;
     }
     .footer-bottom {
         font-size: 0.6em;
