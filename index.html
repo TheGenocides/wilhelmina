@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Wilhelmina</title>
 </head>
 <body>
@@ -44,7 +45,7 @@
 
     <section>
         <div id="welcome-page" class="welcome-page">
-            <div class="welcome-opening">
+            <div class="welcome-opening" data-aos="fade-in" data-aos-duration="500" data-aos-offset="0">
                 <div class="header">
                     <h1>World of Van Vutura Awaits</h1>
                 </div>
@@ -57,11 +58,11 @@
         </div>
         
         <div id="about-page" class="about-page">
-            <div class="about-title">
+            <div class="about-title"  data-aos="fade-right" data-aos-duration="500">
                 <h1>WHO ARE WE?</h1>
                 <p>Wilhelmina cups is an annual sport event hosted and managed by the student council of SMKN 1 Jakarta</p>
             </div>
-            <div class="about-content">
+            <div class="about-content"  data-aos="fade-left" data-aos-duration="500">
                 <div class="img-wrapper-about">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/NSC-Oct-2017.jpg/800px-NSC-Oct-2017.jpg" alt="...">
                 </div>
@@ -76,15 +77,15 @@
             </div>
             <div class="comp-title-container">
                 <div class="comp-title">
-                    <div class="orange-text">
+                    <div class="orange-text" data-aos="fade-right">
                         <h1>WE ARE <br>BACK <br>ONCE AGAIN</h1>
                     </div>
-                    <div class="blue-text">
-                        <h1>WITH 4<br>SPORT<br>COMPETITIONS</h1>
+                    <div class="blue-text"  data-aos="fade-left">
+                        <h1>WITH 6<br>SPORT<br>COMPETITIONS</h1>
                     </div>
                 </div>
             </div>
-            <div class="comp-list">
+            <div class="comp-list" data-aos="fade-up" data-aos-duration="1500">
                 <div class="comp-list-box">
                     <div class="box-img">
                         <img 
@@ -171,12 +172,12 @@
                 <h1>Pay us a visit!</h1>
             </div>
             <div class="footer-center">
-                <div class="foot-img">
+                <div class="foot-img" data-aos="zoom-in">
                     <a href="https://maps.app.goo.gl/dxsfULxV5r8XzYxVA" target="_blank">
                         <img src="./assets//smk1 maps.jpg" alt="SMKN 1 JAKARTA">
                     </a>
                 </div>
-                <div class="foot-desc">
+                <div class="foot-desc" data-aos="zoom-in">
                     <h3>SMK Negeri 1 JAKARTA</h3>
                     <p>
                         Jl. Budi Utomo No. 7 Kel, <br>
@@ -192,4 +193,8 @@
 </body>
 
 <script src="./script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </html>
