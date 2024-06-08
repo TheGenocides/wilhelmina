@@ -538,7 +538,7 @@ html, body {
     background: rgb(248,28,123);
     background: linear-gradient(135deg, rgba(248,28,123,1) 0%, rgba(249,101,95,1) 55%);
     color: white;
-    transform: scale(0.9);
+
     border: none;
     transition: all 0.2s ease-in;
 }
@@ -548,7 +548,6 @@ html, body {
         background: rgb(248,28,123);
         background: linear-gradient(135deg, rgba(248,28,123,1) 0%, rgba(249,101,95,1) 55%);
         color: white;
-        transform: scale(0.9);
         border: none;
         transition: 0.1s ease-in;
     }
