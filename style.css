@@ -433,9 +433,6 @@ html, body {
     position: absolute;
     right: 5%;
     bottom: 0;
-    /* padding-bottom: 30px; */
-    /* transform: translateY(-1.5em);
-    transform: translateX(-1.5em); */
     transform: translateY(-25px);
     display: flex;
     align-items: end;
@@ -459,7 +456,7 @@ html, body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     place-items: center;
-    gap: 20px;
+    gap: 25px;
     padding: 30px 15px;
     height: fit-content;
     z-index: 4;
@@ -470,7 +467,6 @@ html, body {
     border: 3px solid var(--pink);
     padding: 1em 1em;
     border-radius: 5px;
-    /* height: 180px; */
     height: fit-content;
     gap: 10px;
     max-width: 500px;
@@ -515,6 +511,25 @@ html, body {
     background-color: transparent;
     font-weight: 100;
     white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+}
+.detail-button::before {
+    content: "";
+    width: 0;
+    height: auto;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: rgb(248,28,123); */
+    background: linear-gradient(to right, rgba(248,28,123,1) 0%, rgba(249,101,95,1) 100%);;
+    transition: 0.5s ease;
+    display: block;
+    z-index: -1;
+}
+.detail-button:hover::before {
+    width: 100%;
 }
 .box-detail > .detail-button:hover {
     background: rgb(248,28,123);
@@ -522,13 +537,13 @@ html, body {
     color: white;
     border: none;
     transition: all 0.2s ease-in;
-}
+} 
 
 @media (max-width: 480px) {
     .box-detail > .detail-button {
         padding: 0.5em 1em;
     }
-    .box-detail > .detail-button:focus-within {
+    .box-detail > .detail-button:active {
         background: rgb(248,28,123);
         background: linear-gradient(135deg, rgba(248,28,123,1) 0%, rgba(249,101,95,1) 55%);
         color: white;
