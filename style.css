@@ -521,6 +521,11 @@ html, body {
     /* margin-bottom: 6px; */
     /* NOTICE! ADD GRADIENT */
 }
+
+#pp-wira-detail-header {
+    font-size: 1em 
+} /* PP Wira text too long */
+
 .box-detail > .detail-button {
     padding: 1em 2em;
     text-decoration: none;
