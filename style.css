@@ -278,13 +278,13 @@ html, body {
 .about-page {
     position: relative;
     width: 100%;
-    height: 18rem;
+    height: fit-content;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
     background-color: var(--darker-blue);
-    padding: 6em;
+    padding: 3em;
     gap: 3em;
 }
 
@@ -332,12 +332,13 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid;
     width: 100%;
-    /* border:1px solid #43BFE8; */
 }
 .img-wrapper-about{
     position: relative;
     width: 16em;
+    border: 1px solid;
 }
 .img-wrapper-about::after {
     content: '';
