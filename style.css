@@ -518,6 +518,7 @@ html, body {
     background-clip: text;
     color: transparent;
     letter-spacing: 1px;
+    text-align: center
     /* margin-bottom: 6px; */
     /* NOTICE! ADD GRADIENT */
 }
