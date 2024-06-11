@@ -329,18 +329,18 @@ html, body {
 }
 
 .about-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid;
     width: 100%;
+    height: 300px;
+    overflow: hidden;
 }
-.img-wrapper-about{
-    position: relative;
-    width: 16em;
-    border: 1px solid;
+.img-animation-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 400px;
+    justify-items: stretch;
+    animation: scroll 8s linear infinite;
 }
-.img-wrapper-about::after {
+.blur::after {
     content: '';
     position: absolute;
     top: 0;
@@ -350,10 +350,28 @@ html, body {
     background: linear-gradient(to right, var(--darker-blue), rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 70%, var(--darker-blue)),
                 linear-gradient(to bottom, var(--darker-blue), rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 70%, var(--darker-blue));
 }
+@keyframes scroll {
+    to {
+        translate: calc(-2 * 400px);
+        /* Sesuaikan jumlah gambar bagi 2 */
+    }
+}
+.img-wrapper-about{
+    position: relative;
+    flex-shrink: 0;
+    width: 16em;
+    overflow: hidden;
+}
 .img-wrapper-about > img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+@media (max-width: 425px) {
+    .about-content {
+        height: 200px;
+    }
 }
 
 
