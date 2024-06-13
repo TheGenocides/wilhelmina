@@ -1,229 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Wilhelmina</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar border">
-        <div>
-            <img id="logo" src="./assets/logo.png" alt="" width="60px">
-        </div>
+      <div>
+        <img id="logo" src="./assets/logo.png" alt="" width="60px" />
+      </div>
 
-        <div class="hamburger-menu" id="open-menu">
-            <div class="hamburger-bar border"></div>
-            <div class="hamburger-bar border"></div>
-            <div class="hamburger-bar border"></div>
-        </div>
+      <div class="hamburger-menu" id="open-menu">
+        <div class="hamburger-bar border"></div>
+        <div class="hamburger-bar border"></div>
+        <div class="hamburger-bar border"></div>
+      </div>
     </nav>
 
     <div id="menu-container" class="menu-container">
-        <div class="blurred-layer">
-             <p>&copy; 2024 Wilhelmina, All right reserved </p>
+      <div class="blurred-layer">
+        <p>&copy; 2024 Wilhelmina, All right reserved</p>
+      </div>
+      <div class="menu">
+        <div class="close-menu-container" id="close-menu">
+          <div class="close-menu"></div>
         </div>
-        <div class="menu">
-            <div class="close-menu-container" id="close-menu">
-                <div class="close-menu"></div>
-            </div>
-            <div class="menu-options">
-                <div>
-                    <a href="#">Welcome</a> <!-- Scroll to top -->
-                </div>
-                <div>
-                    <a href="#about-page">About Us</a>
-                </div>
-                <div>
-                    <a href="#comp-page">Competitions</a>
-                </div>
-            </div>
-       </div>
-     </div>
+        <div class="menu-options">
+          <div>
+            <a href="#">Welcome</a>
+            <!-- Scroll to top -->
+          </div>
+          <div>
+            <a href="#about-page">About Us</a>
+          </div>
+          <div>
+            <a href="#comp-page">Competitions</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section>
-        <div id="welcome-page" class="welcome-page">
-            <div class="welcome-opening" data-aos="fade-in" data-aos-duration="500" data-aos-offset="0">
-                <div class="header">
-                    <h1>World of Van Vutura Awaits</h1>
-                </div>
-                <div class="img">
-                    <img src="./assets/city.png" alt="Img Failed to Load">
-                </div>
-            </div>
-            <div class="stripe-pattern"></div>
-            <div class="transition"></div>
+      <div id="welcome-page" class="welcome-page">
+        <div
+          class="welcome-opening"
+          data-aos="fade-in"
+          data-aos-duration="500"
+          data-aos-offset="0"
+        >
+          <div class="header">
+            <h1>World of Van Vutura Awaits</h1>
+          </div>
+          <div class="img">
+            <img src="./assets/city.png" alt="Img Failed to Load" />
+          </div>
         </div>
-        
-        <div id="about-page" class="about-page">
-            <div class="about-title"  data-aos="fade-right" data-aos-duration="500">
-                <h1>WHO ARE WE?</h1>
-                <p>Wilhelmina Cup merupakan acara tahunan berisi kompetisi - kompetisi yang diselenggarakan oleh OSIS SMKN 1 Jakarta</p>
-            </div>
-            <div class="about-content blur" data-aos="fade-left" data-aos-duration="500">
-                <div class="img-animation-wrapper">
-                    <div class="img-wrapper-about blur">
-                        <img src="./assets/wilhelmina-tahun-lalu.jpg" alt="...">
-                        <img src="./assets/_MG_0066 - Copy.JPG" alt="...">
-                        <img src="./assets/_MG_2080.JPG" alt="...">
-                        <img src="./assets/_MG_2092.JPG" alt="...">
-                        <img src="./assets/wilhelmina-tahun-lalu.jpg" alt="...">
-                        <img src="./assets/_MG_0066 - Copy.JPG" alt="...">
-                        <img src="./assets/_MG_2080.JPG" alt="...">
-                        <img src="./assets/_MG_2092.JPG" alt="...">
-                    </div>
-                    </div>
-                    <div class="img-wrapper-about blur">
-                    <div class="img-wrapper-about blur">
-                    </div>
-                    <div class="img-wrapper-about blur">
-                    </div>
-                    <div class="img-wrapper-about blur">
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div id="comp-page" class="comp-page">
-            <div class="transition"></div>
-            <div class="stripe-pattern"></div>
-            <div class="comp-m-title">
-                <h3>competitions</h3>
-            </div>
-            <div class="comp-title-container">
-                <div class="comp-title">
-                    <div class="orange-text" data-aos="fade-right">
-                        <h1>WE ARE <br>BACK <br>ONCE AGAIN</h1>
-                    </div>
-                    <div class="blue-text"  data-aos="fade-left">
-                        <h1>WITH <br>SPECTACULAR<br>COMPETITIONS</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="comp-list" data-aos="fade-up" data-aos-duration="1500">
-                <div class="comp-list-box">
-                    <div class="box-img">
-                        <img 
-                            loading="lazy" 
-                            src="assets/sports-img/futsal.png" 
-                            alt="..."
-                        >
-                    </div>
-                    <div class="box-detail">
-                        <div class="detail-header">FUTSAL SMP</div> <!--SUKI MAS ROIHAN REK-->
-                        <a href="https://forms.gle/h921LTx9ZhWTRTNP9" target="_blank" class="detail-button btn-3"><span>Apply Now!</span></a>
-                    </div>
-                </div>
-                <div class="comp-list-box">
-                    <div class="box-img">
-                        <img 
-                            loading="lazy" 
-                            src="assets/sports-img/volleyball.png" 
-                            alt="..."
-                        >
-                    </div>
-                    <div class="box-detail">
-                        <div class="detail-header">VOLLY SMP</div>
-                        <a href="https://forms.gle/BmtnCpHevygH5Ghb7" target="_blank" class="detail-button btn-3"><span>Apply Now!</span></a>
-                    </div>
-                </div>
-                <div class="comp-list-box">
-                    <div class="box-img">
-                        <img 
-                            loading="lazy" 
-                            src="assets/sports-img/futsal.png" 
-                            alt="..."
-                        >
-                    </div>
-                    <div class="box-detail">
-                        <div class="detail-header">FUTSAL SMA/SMK</div>
-                        <a href="https://forms.gle/bShLntZuuKeprxAQA" target="_blank" class="detail-button btn-3"><span>Apply Now!</span></a>
-                    </div>
-                </div>
-                <div class="comp-list-box">
-                    <div class="box-img">
-                        <img 
-                            loading="lazy" 
-                            src="assets/sports-img/volleyball.png" 
-                            alt="..."
-                        >
-                    </div>
-                    <div class="box-detail">
-                        <div class="detail-header">VOLLY SMA/SMK</div>
-                        <a href="https://forms.gle/AMeqiscQ3BXAP88DA" target="_blank" class="detail-button btn-3"><span>Apply Now!</span></a>
-                    </div>
-                </div>
-                <div class="comp-list-box">
-                    <div class="box-img">
-                        <img 
-                            loading="lazy" 
-                            src="./assets/sports-img/pp wira.jpg" 
-                            alt="..."
-                        >
-                    </div>
-                    <div class="box-detail">
-                        <div id="pp-wira-detail-header" class="detail-header">Pertolongan Pertama WIRA</div>
-                        <a href="https://forms.gle/p1yxxHC1wjtjqg6n7" target="_blank" class="detail-button btn-3"><span>Apply Now!</span></a>
-                    </div>
-                </div>
-                <div class="comp-list-box">
-                    <div class="box-img">
-                        <img 
-                            src="assets/sports-img/esport.png" 
-                            alt="..."
-                            loading="lazy" 
-                        >
-                    </div>
-                    <div class="box-detail">
-                        <div class="detail-header">MOBILE LEGENDS</div>
-                        <a href="https://forms.gle/Gr1qAHcCZ1FSELxT9" target="_blank" class="detail-button btn-3"><span>Apply Now!</span></a>
-                    </div>
-                </div>
-            </div>
-            <div id="reqs-section" class="reqs-section">
-                <h2 class="reqs-title">Panduan Perlombaan</h2>
-                <div class="reqs-box-buttons">
-                    <a href="https://drive.google.com/drive/folders/1-45nc3kQFbtyHYFR12IB3HXDeCqR5E3d" target="_blank" class="reqs-button">
-                        <span>Syarat & Ketentuan</span>
-                    </a>
+        <div class="stripe-pattern"></div>
+        <div class="transition"></div>
+      </div>
 
-                    <a href="https://drive.google.com/drive/folders/1tWZgsEJ6cjHM3VNMRG-6jSv2t4CKapZf" target="_blank" class="reqs-button">
-                        <span>Juknis</span>
-                    </a>
-                </div>
-            </div>
+      <div id="about-page" class="about-page">
+        <div class="about-title" data-aos="fade-right" data-aos-duration="500">
+          <h1>WHO ARE WE?</h1>
+          <p>
+            Wilhelmina Cup merupakan acara tahunan berisi kompetisi - kompetisi
+            yang diselenggarakan oleh OSIS SMKN 1 Jakarta
+          </p>
         </div>
-        
-        <div id="footer-page" class="footer-page">
-            <div class="footer-head">
-                <h1>Pay Us a Visit!</h1>
+        <div
+          class="about-content blur"
+          data-aos="fade-left"
+          data-aos-duration="500"
+        >
+          <div class="img-animation-wrapper">
+            <div class="img-wrapper-about blur">
+              <img src="./assets/wilhelmina-tahun-lalu.jpg" alt="..." />
+              <img src="./assets/_MG_0066%20-%20Copy.JPG" alt="..." />
+              <img src="./assets/_MG_2080.JPG" alt="..." />
+              <img src="./assets/_MG_2092.JPG" alt="..." />
+              <img src="./assets/wilhelmina-tahun-lalu.jpg" alt="..." />
+              <img src="./assets/_MG_0066%20-%20Copy.JPG" alt="..." />
+              <img src="./assets/_MG_2080.JPG" alt="..." />
+              <img src="./assets/_MG_2092.JPG" alt="..." />
             </div>
-            <div class="footer-center">
-                <div class="foot-img" data-aos="zoom-in">
-                    <a href="https://maps.app.goo.gl/dxsfULxV5r8XzYxVA" target="_blank">
-                        <img src="./assets/smk1 maps.jpg" alt="SMKN 1 JAKARTA">
-                    </a>
-                </div>
-                <div class="foot-desc" data-aos="zoom-in">
-                    <h3>SMK Negeri 1 JAKARTA</h3>
-                    <p>
-                        Jl. Budi Utomo No. 7 Kel, <br>
-                        Pasar Baru, <br> Kecamatan Sawah Besar
-                    </p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Wilhelmina, All right reserved </p>
-            </div>
+          </div>
+          <div class="img-wrapper-about blur">
+            <div class="img-wrapper-about blur"></div>
+            <div class="img-wrapper-about blur"></div>
+            <div class="img-wrapper-about blur"></div>
+          </div>
         </div>
+      </div>
+
+      <div id="comp-page" class="comp-page">
+        <div class="transition"></div>
+        <div class="stripe-pattern"></div>
+        <div class="comp-m-title">
+          <h3>competitions</h3>
+        </div>
+        <div class="comp-title-container">
+          <div class="comp-title">
+            <div class="orange-text" data-aos="fade-right">
+              <h1>WE ARE <br />BACK <br />ONCE AGAIN</h1>
+            </div>
+            <div class="blue-text" data-aos="fade-left">
+              <h1>WITH <br />SPECTACULAR<br />COMPETITIONS</h1>
+            </div>
+          </div>
+        </div>
+        <div class="comp-list" data-aos="fade-up" data-aos-duration="1500">
+          <div class="comp-list-box">
+            <div class="box-img">
+              <img
+                loading="lazy"
+                src="assets/sports-img/futsal.png"
+                alt="..."
+              />
+            </div>
+            <div class="box-detail">
+              <div class="detail-header">FUTSAL SMP</div>
+              <!--SUKI MAS ROIHAN REK-->
+              <a
+                href="https://forms.gle/h921LTx9ZhWTRTNP9"
+                target="_blank"
+                class="detail-button btn-3"
+                ><span>Apply Now!</span></a
+              >
+            </div>
+          </div>
+          <div class="comp-list-box">
+            <div class="box-img">
+              <img
+                loading="lazy"
+                src="assets/sports-img/volleyball.png"
+                alt="..."
+              />
+            </div>
+            <div class="box-detail">
+              <div class="detail-header">VOLLY SMP</div>
+              <a
+                href="https://forms.gle/BmtnCpHevygH5Ghb7"
+                target="_blank"
+                class="detail-button btn-3"
+                ><span>Apply Now!</span></a
+              >
+            </div>
+          </div>
+          <div class="comp-list-box">
+            <div class="box-img">
+              <img
+                loading="lazy"
+                src="assets/sports-img/futsal.png"
+                alt="..."
+              />
+            </div>
+            <div class="box-detail">
+              <div class="detail-header">FUTSAL SMA/SMK</div>
+              <a
+                href="https://forms.gle/bShLntZuuKeprxAQA"
+                target="_blank"
+                class="detail-button btn-3"
+                ><span>Apply Now!</span></a
+              >
+            </div>
+          </div>
+          <div class="comp-list-box">
+            <div class="box-img">
+              <img
+                loading="lazy"
+                src="assets/sports-img/volleyball.png"
+                alt="..."
+              />
+            </div>
+            <div class="box-detail">
+              <div class="detail-header">VOLLY SMA/SMK</div>
+              <a
+                href="https://forms.gle/AMeqiscQ3BXAP88DA"
+                target="_blank"
+                class="detail-button btn-3"
+                ><span>Apply Now!</span></a
+              >
+            </div>
+          </div>
+          <div class="comp-list-box">
+            <div class="box-img">
+              <img
+                loading="lazy"
+                src="./assets/sports-img/pp wira.jpg"
+                alt="..."
+              />
+            </div>
+            <div class="box-detail">
+              <div id="pp-wira-detail-header" class="detail-header">
+                Pertolongan Pertama WIRA
+              </div>
+              <a
+                href="https://forms.gle/p1yxxHC1wjtjqg6n7"
+                target="_blank"
+                class="detail-button btn-3"
+                ><span>Apply Now!</span></a
+              >
+            </div>
+          </div>
+          <div class="comp-list-box">
+            <div class="box-img">
+              <img
+                src="assets/sports-img/esport.png"
+                alt="..."
+                loading="lazy"
+              />
+            </div>
+            <div class="box-detail">
+              <div class="detail-header">MOBILE LEGENDS</div>
+              <a
+                href="https://forms.gle/Gr1qAHcCZ1FSELxT9"
+                target="_blank"
+                class="detail-button btn-3"
+                ><span>Apply Now!</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="reqs-section" class="reqs-section">
+          <h2 class="reqs-title">Panduan Perlombaan</h2>
+          <div class="reqs-box-buttons">
+            <a
+              href="https://drive.google.com/drive/folders/1-45nc3kQFbtyHYFR12IB3HXDeCqR5E3d"
+              target="_blank"
+              class="reqs-button"
+            >
+              <span>Syarat & Ketentuan</span>
+            </a>
+
+            <a
+              href="https://drive.google.com/drive/folders/1tWZgsEJ6cjHM3VNMRG-6jSv2t4CKapZf"
+              target="_blank"
+              class="reqs-button"
+            >
+              <span>Juknis</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer-page" class="footer-page">
+        <div class="footer-head">
+          <h1>Pay Us a Visit!</h1>
+        </div>
+        <div class="footer-center">
+          <div class="foot-img" data-aos="zoom-in">
+            <a href="https://maps.app.goo.gl/dxsfULxV5r8XzYxVA" target="_blank">
+              <img src="./assets/smk1 maps.jpg" alt="SMKN 1 JAKARTA" />
+            </a>
+          </div>
+          <div class="foot-desc" data-aos="zoom-in">
+            <h3>SMK Negeri 1 JAKARTA</h3>
+            <p>
+              Jl. Budi Utomo No. 7 Kel, <br />
+              Pasar Baru, <br />
+              Kecamatan Sawah Besar
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Wilhelmina, All right reserved</p>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 
-<script src="./script.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
     AOS.init();
-</script>
+  </script>
 </html>
