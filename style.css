@@ -160,10 +160,6 @@ html, body {
 }
 
 /* --- WELCOME PAGE --- */
-/* .welcome-page, .welcome-page * {
-    border: 1px solid red;
-} */
-
 .welcome-page {
     position: relative;
     display: flex;
@@ -597,6 +593,7 @@ html, body {
 @media (min-width: 480px) {
     .reqs-box-buttons {
         align-items: center;
+        flex-direction: row;
     }
     .reqs-button {
         width: 16em;
