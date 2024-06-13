@@ -334,11 +334,16 @@ html, body {
     overflow: hidden;
 }
 .img-animation-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+.img-wrapper-about{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 400px;
+    grid-auto-columns: 15rem;
     justify-items: stretch;
     animation: scroll 8s linear infinite;
+    row-gap: 2em;
 }
 .blur::after {
     content: '';
@@ -352,15 +357,9 @@ html, body {
 }
 @keyframes scroll {
     to {
-        translate: calc(-2 * 400px);
+        translate: calc(-4 * 15rem);
         /* Sesuaikan jumlah gambar bagi 2 */
     }
-}
-.img-wrapper-about{
-    position: relative;
-    flex-shrink: 0;
-    width: 16em;
-    overflow: hidden;
 }
 .img-wrapper-about > img {
     object-fit: cover;
