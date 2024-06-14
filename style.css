@@ -334,8 +334,8 @@ html, body {
     grid-auto-flow: column;
     grid-auto-columns: 15rem;
     justify-items: stretch;
-    animation: scroll 8s linear infinite;
-    row-gap: 2em;
+    animation: scroll 12s linear infinite;
+    row-gap: 0.5em;
 }
 .blur::after {
     content: '';
@@ -541,7 +541,6 @@ html, body {
     position: absolute;
     top: 0;
     left: 0;
-    /* background: rgb(248,28,123); */
     background: linear-gradient(to right, rgba(248,28,123,1) 0%, rgba(249,101,95,1) 100%);;
     transition: 0.5s ease;
     display: block;
@@ -734,9 +733,6 @@ html, body {
         height: 140px;
         margin: 0 0.5em;
     }
-    /* .comp-list-box > .box-img {
-        width: 150px;
-    } */
     .box-detail > .detail-button {
         padding: 0.6em 1.2em;
     }
@@ -759,7 +755,7 @@ html, body {
         padding: 0 1em;
     }
     .foot-img {
-        width: 160px;
+        width: 165px;
         height: 140px;
         overflow: hidden;
         background-color: #2E2D43;
