@@ -553,7 +553,7 @@ html, body {
     background: rgb(248,28,123);
     background: linear-gradient(135deg, rgba(248,28,123,1) 0%, rgba(249,101,95,1) 55%);
     color: white;
-    border-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
     transition: all 0.2s ease-in;
 }
 
@@ -609,7 +609,7 @@ html, body {
 }
 
 .reqs-button:hover {
-    border-color: rgba(255, 255, 255, 0.3);;
+    border-color: rgba(255, 255, 255, 0.5);
     background-image: linear-gradient(to right, var(--pink), var(--pink-gradient-color-1), var(--pink-gradient-color-2));
 
 }
