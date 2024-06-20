@@ -57,6 +57,7 @@ html, body {
     top: 0;
     z-index: 13;
     background-color: var(--darker-blue);
+    border-bottom: 2px solid var(--border-color);
 }
 
 .hamburger-menu {
@@ -304,10 +305,6 @@ html, body {
 .about-title {
     z-index: 6;
 }
-.about-title p {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-}
 
 .about-title > h1 { 
     font-size: clamp(1.8rem, 1.4716rem + 2.3881vw, 3rem);
@@ -324,6 +321,10 @@ html, body {
     margin-top: 0.4em;
     color: var(--blue-gradient-color-2);
     font-size: clamp(0.7rem, 0.14rem + 3.2vw, 1.1rem);
+    text-align: justify;
+    width: 31ch;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
 .about-content {
