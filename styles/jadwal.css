@@ -68,6 +68,12 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid red;
+}
+
+.mySwiper {
+  border: 1px solid red;
+  width: 800px;
 }
 
 .collection .content {
