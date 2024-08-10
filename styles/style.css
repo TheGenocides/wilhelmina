@@ -46,8 +46,40 @@ html, body {
     border: 2px solid var(--border-color);
 }
 
+.nav-cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.alert {
+    width: 100%;
+    padding: 0.5em;
+    height: 40px;
+    background-color: #F28061;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 13;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.6em;
+    /* border: 3px solid red; */
+}
+
+.alert i {
+    flex-grow: 1; /* Allow text to take available space */
+}
+
 
 .navbar {
+    /* border: 3px solid blue; */
     display: flex;
     justify-content: space-between;
     align-items: center; /* Center Icon & Hamburger */
@@ -166,6 +198,23 @@ html, body {
     text-align: center;
 }
 
+.alert {
+    width: 100%;
+    height: 24px;
+    background-color: #F28061;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert a {
+    text-decoration: none;
+    color: white;
+}
+
+
 /* --- WELCOME PAGE --- */
 .welcome-page {
     position: relative;
@@ -176,7 +225,7 @@ html, body {
     padding: 2em 2em;
     background-color: var(--darker-pink);
     overflow: hidden;
-    margin-top: 3em; /* Distance between navbar and welcome page (navbar use position fixed) */
+    /* margin-top: ; Distance between navbar and welcome page (navbar use position fixed) */
 }
 
 @media (max-width: 768px) {
@@ -297,7 +346,7 @@ html, body {
 @media (max-width: 768px) {
     .about-page {
         flex-wrap: wrap;
-        padding: 1.5em;
+        padding: 1em;
         gap: 1.2em;
     }
 }
