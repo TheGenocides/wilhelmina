@@ -1,8 +1,14 @@
+const imagePath = [
+  '.assets/jadwal-img/BAGAN-FUTSAL-SMP-WILHELMINA-A-VOL6A.webp'
+];
+
+
+
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
-  loop:true,
+  loop: true,
   slidesPerView: "auto",
   coverflowEffect: {
     rotate: 0,

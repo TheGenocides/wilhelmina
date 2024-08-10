@@ -51,7 +51,9 @@ html, body {
     flex-direction: column;
     width: 100%;
     height: 100px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
 .alert {
@@ -61,9 +63,7 @@ html, body {
     background-color: #F28061;
     color: white;
     text-align: center;
-    position: fixed;
     bottom: 0;
-    z-index: 13;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     display: flex;
@@ -85,9 +85,6 @@ html, body {
     align-items: center; /* Center Icon & Hamburger */
     width: 100%;
     padding: 0.4em 0.6em; /* Padding for Icon & Hamburger : Top Bottom | Left Right */
-    position: fixed;
-    top: 0;
-    z-index: 13;
     background-color: var(--darker-blue);
     border-bottom: 2px solid var(--border-color);
 }
@@ -225,20 +222,20 @@ html, body {
     padding: 2em 2em;
     background-color: var(--darker-pink);
     overflow: hidden;
-    /* margin-top: ; Distance between navbar and welcome page (navbar use position fixed) */
+    /* margin-top: 2em; Distance between navbar and welcome page (navbar use position fixed) */
 }
 
 @media (max-width: 768px) {
     .welcome-page {
-        height: 27em;
-        padding: 1em 2em;
+        height: 29em;
+        padding: 3em 2em 1em;
     }
 }
 
 @media (max-width: 480px) {
     .welcome-page {
-        padding: 1em 1em;
-        height: 25em;
+        padding: 4em 1em 1em;
+        height: 29em;
     }
 }
 
