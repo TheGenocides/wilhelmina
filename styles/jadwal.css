@@ -85,6 +85,7 @@ section {
 
 .mySwiper {
   width: 800px;
+  border-radius: 20px;
 }
 
 .faded::before,
@@ -100,12 +101,12 @@ section {
 
 .faded::before {
     left: 0;
-    background: linear-gradient(to right, rgb(0, 0, 0, 0.5), rgba(255, 255, 255, 0));
+    background: linear-gradient(to right, rgba(52, 25, 40, 0.7), rgba(255, 255, 255, 0));
 }
 
 .faded::after {
     right: 0;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0));
+    background: linear-gradient(to left, rgba(52, 25, 40, 0.7), rgba(255, 255, 255, 0));
 }
 
 .collection .content {
