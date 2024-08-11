@@ -43,6 +43,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 header {
@@ -53,7 +54,7 @@ header {
   width: 100%;
   color: #FFFFFF;
   text-shadow: #474747 3px 5px 2px;
-  padding: 20px 10px;
+  padding: 30px 10px;
   margin-bottom: 8px;
   position: fixed;
   top: 0;
@@ -88,7 +89,7 @@ section {
 @media (max-width: 480px) {
   .collection {
     justify-content: space-between;
-    margin-top: 2em;
+    margin-top: 1.5em;
   }
 }
 
@@ -137,6 +138,7 @@ section {
   align-items: center;
   z-index: 50;
   margin-top: 30px;
+  text-align: center;
 }
 
 .back a {
