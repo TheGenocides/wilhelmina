@@ -58,6 +58,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 9999;
+  border: 1px solid pink;
 }
 
 header h1 {
@@ -73,14 +74,22 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid red;
 }
 
 .collection {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3.5em;
+  /* margin-top: 3.5em; */
   z-index: 50;
+}
+
+@media (max-width: 480px) {
+  .collection {
+    justify-content: space-between;
+    margin-top: 2em;
+  }
 }
 
 .mySwiper {
@@ -123,6 +132,9 @@ section {
 }
 
 .back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 50;
   margin-top: 30px;
 }
@@ -132,7 +144,7 @@ section {
   padding: 8px 24px;
   border-radius: 14px;
   color: white;
-  border: 3px solid rgba(255, 255, 255, 0.5);
+  border: 3px solid rgba(107, 94, 94, 0.5);
   background: linear-gradient(135deg, rgba(248,28,123,1) 0%, rgba(249,101,95,1) 55%);
   transition: border-color 0.5s ease-in;
 }
