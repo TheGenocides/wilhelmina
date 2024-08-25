@@ -1,11 +1,14 @@
 // Add new image inside array
 const imagePath = [
-  './assets/jadwal-img/BAGAN-FUTSAL-SMP-WILHELMINA-A-VOL6A.webp',
-  './assets/jadwal-img/BAGAN-FUTSAL-SMP-WILHELMINA-A-VOL6A.webp',
-  './assets/jadwal-img/BAGAN-FUTSAL-SMP-WILHELMINA-A-VOL6A.webp',
-  './assets/jadwal-img/BAGAN-FUTSAL-SMP-WILHELMINA-A-VOL6A.webp',
-  './assets/jadwal-img/BAGAN-FUTSAL-SMP-WILHELMINA-A-VOL6A.webp',
-  './assets/jadwal-img/BAGAN-FUTSAL-SMP-WILHELMINA-A-VOL6A.webp',
+  /*"./assets/jadwal-img/BAGAN-FUTSAL-SMA-WILHELMINA-VOL.6",
+  "./assets/jadwal-img/BAGAN-FUTSAL-SMP-WILHELMINA-A-VOL.6-(A)",
+  "./assets/jadwal-img/BAGAN-FUTSAL-SMP-WILHELMINA-A-VOL6A",
+  "./assets/jadwal-img/BAGAN-FUTSAL-SMP-WILHELMINA-VOL.6-(B)",
+  "./assets/jadwal-img/BAGAN-MLBB-32-BESAR-WILHELMINA-VOL.6",
+  "./assets/jadwal-img/BAGAN-VOLI-WILHELMINA-VOL.6"*/
+  "./assets/jadwal-img/BAGAN FUTSAL SMA WILHELMINA.png",
+  "./assets/jadwal-img/BAGAN GROUP MLBB.png",
+  "./assets/jadwal-img/JADWAL FUTSAL SMP WILHELMINA VOL 6 24 AGUSTUS.png"
 ];
 
 const swiperWrapper = document.querySelector(".swiper-wrapper");
